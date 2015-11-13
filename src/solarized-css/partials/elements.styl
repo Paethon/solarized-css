@@ -16,7 +16,7 @@ code
   padding: 2px
 
 a
-  color: $yellow
+  color: $blue
 
 a:visited
   color: $orange
@@ -25,10 +25,13 @@ a:hover
   color: $orange
 
 h1
-  color: $magenta
+  color: $red
 
 h2,h3,h4,h5,h6
-  color: $green
+  if $solarized is dark
+    color: $yellow
+  else
+    color: $blue
   text-align: center
 
 pre
