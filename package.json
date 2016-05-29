@@ -19,6 +19,7 @@
     "grunt-concurrent": "~0.4.2",
     "grunt-coffeelint": "0.0.8",
     "grunt-contrib-concat": "~0.3.0"
+    "grunt-contrib-cssmin": "~1.0.0"  
   },
   "optionalDependencies": {},
   "engines": {

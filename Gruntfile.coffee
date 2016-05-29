@@ -31,10 +31,15 @@ module.exports = (grunt) ->
       main:
         files:
           "build/all.min.js": "build/all.js"
+    cssmin:
+      main:
+        files: 
+          "build/solarized-light.min.css": "build/solarized-light.css"
+          "build/solarized-dark.min.css": "build/solarized-dark.css" 
     concurrent:
       compile: ['stylus:dark', 'stylus:light', 'coffee:main']
       concat: ['concat']
-      minify: ['uglify:main']
+      minify: ['uglify:main', 'cssmin:main']
       lint: ['coffeelint:all']
 
     watch:
@@ -62,6 +67,7 @@ module.exports = (grunt) ->
   grunt.loadNpmTasks 'grunt-contrib-coffee'
   grunt.loadNpmTasks 'grunt-contrib-uglify'
   grunt.loadNpmTasks 'grunt-contrib-concat'
+  grunt.loadNpmTasks 'grunt-contrib-cssmin'
   grunt.loadNpmTasks 'grunt-concurrent'
   grunt.loadNpmTasks 'grunt-coffeelint'
   grunt.registerTask "default", [
