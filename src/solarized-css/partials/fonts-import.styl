@@ -1,5 +1,42 @@
 @css {
-  @import url(http://cdn.jsdelivr.net/font-hack/2.018/css/hack-extended.min.css);
-  @import url(http://fonts.googleapis.com/css?family=Roboto+Slab:light);
-  @import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:light);
+    /* @import url(http://cdn.jsdelivr.net/font-hack/2.018/css/hack-extended.min.css); */
+    @font-face {
+        font-family: 'Hack';
+        src: url('http://cdn.jsdelivr.net/font-hack/2.018/fonts/eot/hack-regular-webfont.eot?v=2.018');
+        src: url('http://cdn.jsdelivr.net/font-hack/2.018/fonts/eot/hack-regular-webfont.eot?#iefix&v=2.018') format('embedded-opentype'), url('http://cdn.jsdelivr.net/font-hack/2.018/fonts/woff2/hack-regular-webfont.woff2?v=2.018') format('woff2'), url('http://cdn.jsdelivr.net/font-hack/2.018/fonts/woff/hack-regular-webfont.woff?v=2.018') format('woff'), url('http://cdn.jsdelivr.net/font-hack/2.018/fonts/web-ttf/hack-regular-webfont.ttf?v=2.018') format('truetype'), url('http://cdn.jsdelivr.net/font-hack/2.018/fonts/svg/hack-regular-webfont.svg?v=2.018#hackregular') format('svg');
+        font-weight: 400;
+        font-style: normal;
+    }
+    /* @import url(http://fonts.googleapis.com/css?family=Roboto+Slab:light); */
+    @font-face {
+        font-family: 'Roboto Slab';
+        font-style: normal;
+        font-weight: 300;
+        src: local('Roboto Slab Light'), local('RobotoSlab-Light'), url(http://fonts.gstatic.com/s/robotoslab/v6/dazS1PrQQuCxC3iOAJFEJavyPXdneeGd26m9EmFSSWg.woff2) format('woff2');
+        unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+    }
+    @font-face {
+        font-family: 'Roboto Slab';
+        font-style: normal;
+        font-weight: 300;
+        src: local('Roboto Slab Light'), local('RobotoSlab-Light'), url(http://fonts.gstatic.com/s/robotoslab/v6/dazS1PrQQuCxC3iOAJFEJUo2lTMeWA_kmIyWrkNCwPc.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+    }
+    /* @import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:light); */
+    /* latin-ext */
+    @font-face {
+        font-family: 'Roboto Condensed';
+        font-style: normal;
+        font-weight: 300;
+        src: local('Roboto Condensed Light'), local('RobotoCondensed-Light'), url(http://fonts.gstatic.com/s/robotocondensed/v13/b9QBgL0iMZfDSpmcXcE8nPVFL0ofnRu5Y2lP-UpEUGU.woff2) format('woff2');
+        unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+    }
+    /* latin */
+    @font-face {
+        font-family: 'Roboto Condensed';
+        font-style: normal;
+        font-weight: 300;
+        src: local('Roboto Condensed Light'), local('RobotoCondensed-Light'), url(http://fonts.gstatic.com/s/robotocondensed/v13/b9QBgL0iMZfDSpmcXcE8nBBQ_Gf4FfI8J4SYljBAylk.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+    }
 }
